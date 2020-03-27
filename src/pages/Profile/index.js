@@ -4,6 +4,8 @@ import { Link, useHistory } from 'react-router-dom';
 
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 
+import axios from 'axios';
+
 import api from '../../services/api';
 
 import Swal from 'sweetalert2';
@@ -20,6 +22,10 @@ export default function Profile() {
   const ongName = localStorage.getItem('ongName');
 
   const [incidents, setIncidents] = useState([]);
+
+  const CancelToken = axios.CancelToken;
+
+  let cancel;
 
   useEffect(() => {
     api.get(`/incidents/${ongId}`).then((res) => {
@@ -52,6 +58,24 @@ export default function Profile() {
     history.push('/');
   }
 
+  async function handleSearch(search) {
+    cancel && cancel();
+
+    try {
+      let response = await api.get(`/incidents/${ongId}?search=${search}`, {
+        cancelToken: new CancelToken((c) => {
+          cancel = c;
+        })
+      });
+
+      setIncidents(response.data);
+    } catch (err) {
+      if (!axios.isCancel(err)) {
+        Swal.fire(`${err}`);
+      }
+    }
+  }
+
   return (
     <div className="profile-container">
       <header>
@@ -67,6 +91,10 @@ export default function Profile() {
       </header>
 
       <h1>Casos cadastrados</h1>
+
+      <form>
+        <input onKeyUp={(e) => { handleSearch(e.target.value) }} placeholder="Digite sua pesquisa" />
+      </form>
 
       <ul>
         {incidents.map((incident) => (
