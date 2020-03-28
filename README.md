@@ -25,7 +25,3 @@ Execute `npm start` para iniciar o servidor. Automaticamente será aberto o nave
 ## Build
 
 Execute `npm run build` e, será compilado o projeto para produção. Os arquivos serão criados na pasta `build/`. Use esses arquivos para publicar em algum servidor web.
-
-## 📝Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
