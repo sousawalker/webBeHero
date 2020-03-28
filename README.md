@@ -18,8 +18,6 @@
   </a>
 </p>
 
-## 💻 Informações:
-
 ### Frontend:
 
 Feito com [ReactJS](https://reactjs.org/) usando:
