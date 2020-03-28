@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="src\assets\logo.svg?raw=true" alt="Logo" width="100">
+<img src="\src\assets\logo.svg?raw=true" alt="Logo" width="100">
   <br>
   11° Semana OmniStack da Rocketseat 🚀
   <br>
