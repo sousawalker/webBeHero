@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="../mobehero/src/assets/logo@x2.png?raw=true" alt="Logo" width="100">
+  <img src="../../../mobehero/src/assets/logo@x2.png?raw=true" alt="Logo" width="100">
   
   <br>
   
