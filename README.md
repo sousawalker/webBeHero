@@ -1,14 +1,12 @@
 <h1 align="center">
-  <img src="../../../mobbehero/raw/master/src/assets/logo@2x.png?raw=true" alt="Logo" width="180">
+  <img src="../../../mobbehero/raw/master/src/assets/logo@2x.png?raw=true" alt="Logo">
   
   <br>
   
   11° Semana OmniStack da Rocketseat 🚀
-  
-  <br>
 </h1>
 
-<h3 align="center">Be The Hero</h4>
+<h3 align="center">Be The Hero</h3>
 
 <h4 align="center">Projeto realizado durante o evento da 11° Semana OmniStack, promovido pelo Diego Fernandes da Rocketseat.</h4>
 
@@ -18,12 +16,15 @@
   </a>
 </p>
 
-### Frontend:
+Esse projeto foi feito com [ReactJS](https://reactjs.org/) verssão 16.13.1:
 
-Feito com [ReactJS](https://reactjs.org/) usando:
+## Servidor de desenvolvimento
 
-- Axios
-- React Icons
+Execute `npm start` para iniciar o servidor. Automaticamente será aberto o navegador no endereço `http://localhost:3000/`.
+
+## Build
+
+Execute `npm build` e, será compilado o projeto para produção. Os arquivos serão criados na pasta `build/`. Use esses arquivos para publicar em algum servidor web.
 
 ## 📝Licença
 
