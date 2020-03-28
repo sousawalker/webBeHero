@@ -1,2 +1,2 @@
 # webBehero
-Projeto web do curso da OmniStack 11.
+Projeto web em React desenvolvida para aprendizado do OmniStack 11.
