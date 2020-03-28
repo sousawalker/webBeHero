@@ -16,7 +16,7 @@
   </a>
 </p>
 
-Esse projeto foi feito com [ReactJS](https://reactjs.org/) verssão 16.13.1:
+Esse projeto foi feito com [ReactJS](https://reactjs.org/) versão 16.13.1:
 
 ## Servidor de desenvolvimento
 
