@@ -109,7 +109,7 @@ export default function Profile() {
 
             <strong>VALOR:</strong>
 
-            <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
+            <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value).replace(/^(\D+)/, '$1 ')}</p>
 
             <button onClick={() => handleDeleteIncident(incident.id)}>
               <FiTrash2 size={20} color="#A8A8B3" />
