@@ -10,7 +10,7 @@
 
 <h3 align="center">Be The Hero</h4>
 
-<h4 align="center">Projeto realizado durante o evento da 11° Semana OmniStack, promovido pelo Diego da Rocketseat.</h4>
+<h4 align="center">Projeto realizado durante o evento da 11° Semana OmniStack, promovido pelo Diego Fernandes da Rocketseat.</h4>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
